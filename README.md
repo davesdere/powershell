@@ -1,4 +1,14 @@
-# Simple GUI window for Windows. TODO: Test the equivalent in powershell core.
+# Basics
+```
+Get-AWSPowerShellVersion
+Get-AWSPowerShellVersion -ListServiceVersionInfo
+Update-AWSToolsModule -CleanUp
+Uninstall-Module -Name AWSPowerShell.NetCore -AllVersions
+Install-Module -Name AWSPowerShell
+```
+
+Simple GUI window for Windows. TODO: Test the equivalent in powershell core.
+
 ```Powershell
 Add-Type -AssemblyName PresentationFramework
 
