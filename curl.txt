@@ -1,0 +1,1 @@
+curl --include --user "arksight_local:averybigpassword!" "http://oasis-dv.lacaisse.com/server/oasis_control/vd_vdp_catalog_permissions/views/vd_vdp_catalog_permissions/"

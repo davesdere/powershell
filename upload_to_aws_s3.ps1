@@ -2,16 +2,18 @@
 
 # After copying this script make sure to Run As Admin
 # Set-ExecutionPolicy RemoteSigned 
-
-# Make sure the proper libraries are installed
-Install-Module -name AWSPowerShell.NetCore
+$PSVersionTable.PSVersion
+# Make sure the proper libraries are installed Run As Admin
+Install-Module -name AWSPowerShell -Scope AllUsers
+AWS.Tools
 # Check its there
-Get-Module -ListAvailable
+#Get-Module -ListAvailable
+Find-Module -Name AWSPowerShell
 
 # If you're running PowerShell as administrator, the previous command installs AWS Tools for PowerShell for all users on the computer. If you're running PowerShell as a standard user without administrator permissions, that same command installs AWS Tools for PowerShell for only the current user.
 # You could scope it differently with # Install-Module -name AWSPowerShell.NetCore -Scope CurrentUser
 # Once done, import the librarie because its too large to automatically load
-Import-Module AWSPowerShell.NetCore
+Import-Module AWSPowerShell
 
 $BucketName = "myS3Bucket"
 $s3Directory = "C:\users\$env:username\documents\s3test"

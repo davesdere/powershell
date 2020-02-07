@@ -1,6 +1,8 @@
+$FileSystemWatcher = New-Object System.IO.FileSystemWatcher
+$FileSystemWatcher | Get-Member -Type Properties,Event
 $FileSystemWatcherParams = @{
 
-  Path = 'C:\Users\Proxb\Desktop\Dropbox'
+  Path = 'C:\test_powershell'
 
   Recurse =  $True
 
