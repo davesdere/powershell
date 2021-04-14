@@ -7,6 +7,15 @@ Uninstall-Module -Name AWSPowerShell.NetCore -AllVersions
 Install-Module -Name AWSPowerShell
 ```
 
+## Powershell Session History
+```
+# File
+(Get-PSReadlineOption).HistorySavePath
+
+# Saving options
+Set-PSReadlineOption -HistorySaveStyle SaveAtExit
+```
+
 Simple GUI window for Windows. TODO: Test the equivalent in powershell core.
 
 ```Powershell
